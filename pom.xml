@@ -27,6 +27,11 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+		</dependency>
+		<dependency>
 			<groupId>org.cloudfoundry.identity</groupId>
 			<artifactId>cloudfoundry-identity-uaa</artifactId>
 			<version>4.30.0</version>
@@ -34,8 +39,16 @@
 	</dependencies>
 	<repositories>
 		<repository>
+			<id>mulesoft-repo</id>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+		</repository>
+		<repository>
 			<id>maven-repo</id>
 			<url>https://search.maven.org/artifact</url>
+		</repository>
+		<repository>
+			<id>spring-repo</id>
+			<url>https://mvnrepository.com/repos/springio-release</url>
 		</repository>
 	</repositories>
 </project>
