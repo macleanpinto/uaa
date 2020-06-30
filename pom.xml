@@ -26,6 +26,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.cloudfoundry.identity</groupId>
+			<artifactId>cloudfoundry-identity-uaa</artifactId>
+			<version>4.30.0</version>
+		</dependency>
 	</dependencies>
 	<repositories>
 		<repository>
