@@ -1,34 +1,38 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>ToolsQA</groupId>
-    <artifactId>UAA</artifactId>
-    <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <name>UAA</name>
-    <url>http://maven.apache.org</url>
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.cloudfoundry.identity/cloudfoundry-identity-uaa -->
-        <dependency>
-            <groupId>org.cloudfoundry.identity</groupId>
-            <artifactId>cloudfoundry-identity-uaa</artifactId>
-            <version>4.27.0</version>
-        </dependency>
-    </dependencies>
-    <repositories>
-        <repository>
-            <releases>
-                <enabled>false</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>fail</checksumPolicy>
-            </snapshots>
-            <id>spring-repo</id>
-            <url>https://repo.spring.io/release/</url>
-        </repository>
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.6.RELEASE</version>
+	</parent>
+	<groupId>com.boeing.avionics.tools.navdb</groupId>
+	<artifactId>uaa</artifactId>
+	<version>0.4.6-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>uaa Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 
-    </repositories>
+	</dependencies>
+	<repositories>
+		<repository>
+			<id>maven-repo</id>
+			<url>https://search.maven.org/artifact</url>
+		</repository>
+	</repositories>
+	<build>
+		<finalName>uaa</finalName>
+	</build>
 </project>
